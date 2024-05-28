@@ -1,3 +1,4 @@
+<!--
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -26,6 +27,8 @@
 </body>
 </html>
 
+
+
 <!-- GIVEN I need to sample a potential employee's previous work
 WHEN I load their portfolio
 THEN I am presented with the developer's name, a recent photo or avatar, and links to sections about them, their work, and how to contact them
@@ -45,3 +48,68 @@ THEN I am presented with a responsive layout that adapts to my viewport -->
 <!-- MDN -->
 
 <!-- YOUTUBE traversymedia webdevsimplified- -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Developer Portfolio</title>
+ <link rel="stylesheet" href="./asset/css/style.css">
+ <link rel="stylesheet" href="./asset/css/reset.css">
+</head>
+<body>
+ <header>
+   <nav>
+     <ul>
+       <li><a href="#about">About</a></li>
+       <li><a href="#work">Work</a></li>
+       <li><a href="#contact">Contact</a></li>
+     </ul>
+   </nav>
+ </header>
+
+ <main>
+   <section id="about">
+     <h1>Daniel Berroa</h1>
+     <img src="avatar.jpg" alt="Developer's Avatar">
+     <p>About the developer...</p>
+   </section>
+
+   <section id="work">
+     <h2>Work</h2>
+     <div class="project-container">
+       <div class="project">
+         <a href="project1.html" target="_blank">
+           <img src="project1.jpg" alt="Project 1">
+         </a>
+         <h3>Project 1</h3>
+         <p>Description of Project 1...</p>
+       </div>
+       <div class="project">
+         <a href="project2.html" target="_blank">
+           <img src="project2.jpg" alt="Project 2">
+         </a>
+         <h3>Project 2</h3>
+         <p>Description of Project 2...</p>
+       </div>
+       <!-- Add more projects here -->
+     </div>
+   </section>
+
+   <section id="contact">
+     <h2>Contact</h2>
+     <form>
+       <!-- Add contact form fields here -->
+       <button type="submit">Submit</button>
+     </form>
+   </section>
+ </main>
+
+ <footer>
+   <!-- Add footer content here -->
+ </footer>
+
+ <script src="script.js"></script>
+</body>
+</html>
