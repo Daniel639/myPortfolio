@@ -1,54 +1,3 @@
-<!--
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <link rel="stylesheet" href="./asset/css/style.css">
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>myPortfolio</title>
-</head> 
-<body>
-    <nav>
-        <h2>Daniel Berroa</h2>
-        <img src="./asset/images/download.jpeg" alt="Daniel's Avatar">
-        <div>
-            <a href="#about-me">About Me</a>
-            <a href="">My Work</a>
-            <a href="">Contact Information</a>
-        </div>
-    </nav>
-    <main>
-        <section id="about-me">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique architecto dolorem est laborum quam possimus libero consectetur ut soluta magnam, reprehenderit, quibusdam, labore quae maiores quasi atque doloremque. Vero aspernatur eos est aliquid, culpa illum doloremque tempora ad quod accusamus officiis, vel earum autem! Labore id error atque nam explicabo!</p>
-        </section>
-        <section id="my-work"></section>
-    </main>
-    <footer></footer>
-</body>
-</html>
-
-
-
-<!-- GIVEN I need to sample a potential employee's previous work
-WHEN I load their portfolio
-THEN I am presented with the developer's name, a recent photo or avatar, and links to sections about them, their work, and how to contact them
-WHEN I click one of the links in the navigation
-THEN the UI scrolls to the corresponding section
-WHEN I click on the link to the section about their work
-THEN the UI scrolls to a section with titled images of the developer's applications
-WHEN I am presented with the developer's first application
-THEN that application's image should be larger in size than the others
-WHEN I click on the images of the applications
-THEN I am taken to that deployed application
-WHEN I resize the page or view the site on various screens and devices
-THEN I am presented with a responsive layout that adapts to my viewport -->
-
-<!-- FLEXBOX FOR CSS -->
-<!-- W3 SCHOOLS -->
-<!-- MDN -->
-
-<!-- YOUTUBE traversymedia webdevsimplified- -->
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -72,44 +21,72 @@ THEN I am presented with a responsive layout that adapts to my viewport -->
  <main>
    <section id="about">
      <h1>Daniel Berroa</h1>
-     <img src="avatar.jpg" alt="Developer's Avatar">
-     <p>About the developer...</p>
-   </section>
+     <img src="./asset/images/Avatar.jpeg" alt="Developer's Avatar">
+     
+     <p class= "boxed-text3"> My name is Daniel Berroa, a professional musician from Caracas, Venezuela. While music remains my passion, I've embarked on an exciting new career in computer programming. 
+      My goal is to become a skilled full-stack developer, designing apps that benefit society, especially in music and sports. 
+      I'm eager to merge my artistic background with cutting-edge technology to create innovative solutions resonating globally. 
+      This transition challenges me, but I'm committed to mastering programming languages and frameworks. 
+      I'm confident my unique perspective will craft impactful applications making a real difference.</p>
+ </section>
 
    <section id="work">
      <h2>Work</h2>
      <div class="project-container">
        <div class="project">
-         <a href="project1.html" target="_blank">
-           <img src="project1.jpg" alt="Project 1">
+         <a href="https://daniel639.github.io/Rawebsite/" target="_blank" rel="noopener">
+           <img src="./asset/images/imgonline-com-ua-resize-EhMsiVCkaA.jpg" alt="Project 1">
          </a>
          <h3>Project 1</h3>
-         <p>Description of Project 1...</p>
+
+         <p class= "boxed-text2"> This webpage meets accessibility standards for an inclusive user experience. 
+          The source code utilizes semantic HTML elements conveying content structure and meaning. 
+          HTML elements follow a logical structure independent of styling for natural content flow, aiding readability and navigation. 
+          All image elements include accessible alt attributes providing textual descriptions for visually impaired users. 
+          Heading elements follow sequential order, facilitating comprehension of content hierarchy and relationships between sections. 
+          The title element contains a concise, descriptive representation of the page's content and purpose, enhancing user experience and search engine optimization.</p>
        </div>
        <div class="project">
-         <a href="project2.html" target="_blank">
-           <img src="project2.jpg" alt="Project 2">
+         <a href="https://wanipopota.github.io/project-1-game/" target="_blank" rel="noopener">
+           <img src="./asset/images/Project 1 GameJoke.png" alt="Project 2">
          </a>
          <h3>Project 2</h3>
-         <p>Description of Project 2...</p>
+        <div class="box">
+          
+          <p class= "boxed-text"> We have created a web app called Joke Games. 
+            It is a website that displays lists of games that you can play and information about them, while always giving you the ability to ask for a joke whilst browsing.</p>
+       
+          </div>
        </div>
        <!-- Add more projects here -->
      </div>
    </section>
-
+<hr>
    <section id="contact">
-     <h2>Contact</h2>
-     <form>
-       <!-- Add contact form fields here -->
-       <button type="submit">Submit</button>
+     <h2>Contact Me</h2> 
+     <form id="myForm" onsubmit="handleSubmit(event)">
+     <form action="/submit_form.php" method="post">
+      <label for="name">Name:</label><br>
+      <input type="text" id="name" name="name"><br>
+      <label for="email">Email:</label><br>
+      <input type="email" id="email" name="email"><br>
+      <label for="message">Message:</label><br>
+      <textarea id="message" name="message"></textarea><br>
+      <input type="submit" value="Submit">
      </form>
    </section>
  </main>
 
  <footer>
-   <!-- Add footer content here -->
- </footer>
+  <ul class="contact-list">
+    <li><a href="tel:3053352627">Phone</a></li>
+    <li><a href="https://github.com/Daniel639">GitHub</a></li>
+    <li><a href="mailto:berroadanny@gmail.com">Email</a></li>
+    <li><a href="https://www.instagram.com/berroajr/">Instagram</a></li>
+  </ul>
 
- <script src="script.js"></script>
+</footer>
+
+ <script src="./asset/script.js"></script>
 </body>
 </html>

@@ -4,20 +4,30 @@
 }
 
 header {
-    background-color: blue;
+    background-color: #8b52fd;
     width: 100%;
-    color: white;
+   /* color: black;*/
     height: 10%;
+    font-size:x-large;
+    letter-spacing: 2px;
+}
+
+p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: larger;
+    margin-bottom: 20px;
+    text-align:center;
 }
 
 a {
     color: white;
+    font-weight: bold;
 }
 
 nav ul li {
     display: inline-block;
-    /*margin-right: 50px;*/
-    margin-top: 30px;
+    margin-top: 20px;
+    margin-bottom: 10px;
 }
 
 nav {
@@ -32,4 +42,109 @@ h1 {
     align-items: center;
     font-size: 45px !important;
     margin-top: 15px;
+    margin-bottom: 20px;
 }
+
+h2, h3 {
+    text-align: center;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    font-size: 30px;
+}
+
+/*
+#work {
+    text-align:center;
+    font-size:x-large;
+} */
+img {
+    width: 300px;
+    height: 200px;
+    margin: 5px auto 20px;
+    margin-top: 5px;
+    margin-bottom: 20px;
+    border: 2px solid #8b52fd;
+    display: block;
+    animation-play-state: running;
+}
+
+/*
+#box {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: larger;
+    margin-bottom: 20px;
+    text-align:justify;
+}*/
+
+  .boxed-text, .boxed-text2, .boxed-text3 {
+    padding: 15px; 
+    color: black;
+    margin-left: 20px;
+    margin-right: 20px; 
+  }
+
+  work h2 {
+    margin: 10px;
+  }
+
+  @media screen and (max-width: 768px) {
+    main,
+    nav {
+      flex-direction: column;
+    }
+  }
+
+  hr {
+    border: none;
+    border-top: 3px solid #333;
+    color: #333;
+    overflow: visible;
+    text-align: center;
+    height: 5px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 15px;
+    margin-bottom: 20px;
+  }
+
+  .contact-list {
+    list-style-type: none;
+    /*padding-left: 30;*/
+    background-color: #8b52fd;
+    text-align: center;
+    padding: 10px;
+  }
+  
+  .contact-list li {
+    display: inline;
+    margin-right: 10px; 
+    font-size: x-large;
+    color: white;
+    letter-spacing: 2px;
+    text-align: center;
+  }
+  
+  #contact form {
+    border: 1px solid #8b52fd;
+    padding: 20px;
+    margin: 20px auto;
+    width: 30%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);  
+  }
+
+  input[type="submit"] {
+    background-color: #8b52fd;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    text-decoration: none;
+    margin: 4px 2px;
+    cursor: pointer;
+    transition: background-color 0.5s ease;
+  }
+  
+  input[type="submit"]:hover {
+    background-color: #000245;
+  }
+  
+  
